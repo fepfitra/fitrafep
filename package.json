@@ -1,0 +1,22 @@
+{
+  "name": "fitrafep",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "astro build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/cloudflare": "^10.2.6",
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "astro": "^4.8.7",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.57.1"
+  }
+}
