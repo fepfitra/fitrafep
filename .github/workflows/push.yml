@@ -9,18 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Setup Deno
-        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          deno-version: v1.x
+          node-version: '18.x'
+
+      - name: Install Dependencies
+        run: npm install
 
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      
+
       - name: Run deploy
-        run: deno deploy
+        run: npm run deploy
 
