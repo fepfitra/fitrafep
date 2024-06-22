@@ -14,4 +14,4 @@ tags:
 
 This project is Gigi Kecil project that we made as a team for a Student Creativity Week event. In this event, we use Flutter, Firebase, and Machine Learning to create a mobile application that can detect the health of the user's teeth in case of caries. In this project, we use Flutter to create a mobile application that can detect the health of the user's teeth in case of caries. We also use  Machine Learning to detect the health of the user's teeth in case of caries and Firebase to support user consulting to professional via chat within the app and.
 
-![Gigi Kecil](/assets/contents/gigi-kecil2.png)
+![Gigi Kecil](/assets/contents/gigi-kecil2.jpg)
