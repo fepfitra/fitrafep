@@ -1,0 +1,8 @@
+services:
+  fepporto:
+    image: fitrafep/fepporto:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4321:4321"
